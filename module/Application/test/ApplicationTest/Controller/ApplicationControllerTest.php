@@ -75,8 +75,8 @@ class ApplicationControllerTest extends AbstractHttpControllerTestCase {
         $this->assertSame($index->getResult(), 'nulla');
 
         // Large number:
-        // $index->setNumber(10001);
-        // $index->generateRomanNumeral();
-        // $this->assertSame($index->getResult(), 'nimis magna');
+        $index->setNumber(1000000);
+        $index->generateRomanNumeral();
+        $this->assertSame($index->getResult(), 'nimis magna!');
     }
 }
