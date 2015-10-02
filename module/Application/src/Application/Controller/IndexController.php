@@ -167,7 +167,7 @@ class IndexController extends AbstractActionController {
      */
     private function convert($x, $v) {
         if ($x < 1) return 'nulla';
-        if ($x > 10000) return 'nimis magna!';
+        if ($x > 3999) return 'nimis magna!';
         $x = round($x);
         // A single array is good for readability.
         // The faster way of doing this is passing two arrays. For this system it is fine to do a
